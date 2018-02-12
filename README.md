@@ -1,3 +1,7 @@
-### 个人wiki
+## iKnowledge
+个人知识库
 
-用于记录杂七杂八的问题、感悟、随笔
+### Puzzles
+
+### Bestpractices
+1. [Mac vim 显示行号和语法高亮](https://github.com/charliex2/something/blob/master/BestPractices/Mac_vim显示行号和语法高亮)
