@@ -1,5 +1,6 @@
-# Flex 布局
-css传统的解决方案基于盒子模型，依赖于`display`、`position`、`float`属性，它对于那些特殊布局非常不方便，比如单单 *垂直居中* 就不容易实现。
+# Flex 布局介绍
+
+css传统的解决方案基于盒子模型，依赖于`display`、`position`、`float`属性，它对于那些特殊布局非常不方便，比如单单 *垂直居中* 就不容易实现。
 
 flex布局是W3C再2009年提出的一种新的布局方案，可以简便、完整、响应式地实现各种页面布局。目前其浏览器支持情况如下：
 ![flex browser support](flex_browser_support.png)
@@ -91,7 +92,7 @@ flex布局是W3C再2009年提出的一种新的布局方案，可以简便、完
 `order`属性定义项目的排列顺序。数值越小，排列越靠前，默认是0.
 
 #### flex-grow 属性
-`flex-grow`属性定义项目的放大比例，默认是`0`. `0`代表即使不存在剩余空间，也不放大。
+`flex-grow`属性定义项目的放大比例，默认是`0`. `0`代表即使不存在剩余空间，也不放大。
 所有的item定义的值若非0相等，则平分所有空间。
 
 #### flex-shrink 属性
@@ -99,9 +100,9 @@ flex布局是W3C再2009年提出的一种新的布局方案，可以简便、完
 若一个项目的`flex-shrink`属性为`0`，其他项目都是`1`，则空间不足时，前者不缩小。
 
 #### flex-basis 属性
-`flex-basis`定义了`item`在主轴方向上的初始大小，可以设置长度值，也可以设置为`auto`、`content`。
-`flex-basis`当设置为`auto`，而`width`设置有长度值的时候，`flex-basis`则会`width`值。
-同时设置`flex-basis`和`width`值时候，则会以`flex-basis`为准。
+`flex-basis`定义了`item`在主轴方向上的初始大小，可以设置长度值，也可以设置为`auto`、`content`。
+`flex-basis`当设置为`auto`，而`width`设置有长度值的时候，`flex-basis`则会`width`值。
+同时设置`flex-basis`和`width`值时候，则会以`flex-basis`为准。
 
 #### flex属性
 `flex`属性是`flex-grow`、`flex-shrink`和`flex-basis`的简写，默认值是`0 1 auto`, 后两个属性可选。
@@ -112,6 +113,9 @@ flex布局是W3C再2009年提出的一种新的布局方案，可以简便、完
 * flex:none 代表 flex:0 0 auto
 
 #### align-self 属性
-`align-self` 属性用于 item 覆写 container 的 `align-items` 属性。`align-self` 允许某个 item 有着不一样的对齐方式。
+`align-self` 属性用于 item 覆写 container 的 `align-items` 属性。`align-self` 允许某个 item 有着不一样的对齐方式。
 
 其属性值与 `align-items` 一致。
+
+> 参考 阮一峰 博客
+> http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?^%$
